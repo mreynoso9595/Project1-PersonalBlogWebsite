@@ -12,13 +12,13 @@
     background: #e1d7d1;
 }
 
-/* .top__boxes {
+.top__boxes {
     margin-top: 2.5em;
 }
 
 .bottom__boxes {
     margin-bottom: 2.5em;
-} */
+}
 
 header {
     display: flex;
