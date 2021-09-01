@@ -99,10 +99,6 @@ button:hover {
     justify-content: center;
 } 
 
-.main__ct div {
-    border: #333 1px solid;
-}
-
 .main__ct div div {
     border: none;
 } 
