@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+} 
+
+.grid__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background: #e1d7d1;
+}
+
+/* .top__boxes {
+    margin-top: 2.5em;
+}
+
+.bottom__boxes {
+    margin-bottom: 2.5em;
+} */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 1/5;
+    background-color: #e1d7d1;
+    height: 15vh;
+    padding: 30px 10%;
+    border-top: solid black 1px;
+}
+
+.blog__title {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 27.7px;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.blog__title span {
+    color: rgb(255,7,110);
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.6);
+}
+
+.image {
+    grid-column: 1/5;
+    height: 40vh;
+    background-image: url("main_image.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid black 1px;
+}
+
+.main__ct {
+    display: grid;
+    grid-template-columns: repeat(3,0.3fr);
+    grid-auto-rows: 300px;
+    grid-gap: 2.5em;
+    grid-column: 1/5;
+    justify-content: center;
+} 
+
+.main__ct div {
+    border: #333 1px solid;
+}
+
+.main__ct div div {
+    border: none;
+} 
+
+.card {
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr repeat(2,0.5fr);
+    grid-template-areas: "image" "text" "stats";
+    font-family: "Roboto", sans-serif;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.35s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-image {
+    grid-area: image;
+    background-image: url("confetti.jpg");
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 15px;
+}
+
+.card-text .date, .date7 {
+    color: rgb(255,7,110);
+    font-size: 13px;
+}
+
+.card-text .date2, .date6, .date8 {
+    color: rgb(255,146,123);
+    font-size: 13px;
+}
+
+.card-text .date3, .date4, .date9 {
+    color: rgba(158,196,232,0.91);
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255,7,110,0.5);
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    font-size: 12.5px;
+}
+
+.card-stats .type {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-stats .value {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card-stats .border {
+    border-left: 1px solid rgb(172,26,87);
+    border-right: 1px solid rgb(172,26,87);
+}
+
+.card-stats .value sup {
+    font-size: 12px;
+}
+
+#card2-img {
+    background-image: url("mindful.jpg");
+    background-position: center;
+}
+
+#card3-img {
+    background-image: url("maze.jpg");
+    background-position: center;
+}
+
+#card4-img {
+    background-image: url("venice.jpg");
+    background-position: top;
+}
+
+#card5-img {
+    background-image: url("stairs.jpg");
+    background-position: 60% 700%;
+}
+
+#card6-img {
+    background-image: url("hotairballon.jpg");
+    background-position: center;
+}
+
+#card7-img {
+    background-image: url("footwear.jpg");
+    background-position: 30% 70%;
+}
+
+#card8-img {
+    background-image: url("party.jpg");
+    background-position: center;
+}
+
+#card9-img {
+    background-image: url("funnydog.jpg");
+    background-position: center;
+}
+
+#card2-stats, #card6-stats, #card8-stats {
+    background: rgb(255,146,123);
+}
+
+#card3-stats, #card4-stats, #card9-stats {
+    background: rgba(158,196,232,0.91);
+}
+
+
