@@ -8,7 +8,7 @@
 
 .grid__wrapper {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr;
     background: #e1d7d1;
 }
 
@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    grid-column: 1/5;
     background-color: #e1d7d1;
     height: 15vh;
     padding: 30px 10%;
@@ -74,7 +73,6 @@ button:hover {
 }
 
 .image {
-    grid-column: 1/5;
     height: 40vh;
     background-image: url("main_image.jpg");
     background-size: cover;
@@ -87,7 +85,6 @@ button:hover {
     grid-template-columns: repeat(3,0.3fr);
     grid-auto-rows: 300px;
     grid-gap: 2.5em;
-    grid-column: 1/5;
     justify-content: center;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
@@ -244,4 +241,15 @@ button:hover {
     background: rgba(158,196,232,0.91);
 }
 
+footer {
+    display: flex;
+    background: #000000;
+    border: solid black 1px;
+    justify-content: center;
+    height: 10vh;
+}
 
+.social-icons {
+    color: #ffffff;
+    margin: 0 10px;
+}
