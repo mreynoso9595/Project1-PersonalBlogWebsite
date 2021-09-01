@@ -12,14 +12,6 @@
     background: #e1d7d1;
 }
 
-/* .top__boxes {
-    margin-top: 2.5em;
-}
-
-.bottom__boxes {
-    margin-bottom: 2.5em;
-} */
-
 header {
     display: flex;
     justify-content: flex-end;
@@ -97,6 +89,8 @@ button:hover {
     grid-gap: 2.5em;
     grid-column: 1/5;
     justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 } 
 
 .main__ct div div {
