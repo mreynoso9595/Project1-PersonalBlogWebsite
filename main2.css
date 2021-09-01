@@ -19,7 +19,6 @@ header {
     background-color: #e1d7d1;
     height: 15vh;
     padding: 30px 10%;
-    border-top: solid black 1px;
 }
 
 .blog__title {
@@ -77,7 +76,6 @@ button:hover {
     background-image: url("main_image.jpg");
     background-size: cover;
     background-position: center;
-    border: solid black 1px;
 }
 
 .main__ct {
@@ -259,9 +257,13 @@ footer {
 
 .social-icons {
     display: inline-block;
-    color: #ffffff;
+    color: #e1d7d1;
     margin: 0 10px;
     font-size: 1.5em;
+}
+
+.social-icons:hover {
+    color: #7b7f85;
 }
 
 .nav__links2 li {
@@ -274,6 +276,10 @@ footer {
 
 .nav__links2 li a {
     transition: all 0.3s ease 0s;
-    color: #ffffff;
+    color: #e1d7d1;
     text-decoration: none;
+}
+
+.nav__links2 li a:hover {
+    color: #7b7f85;
 }
