@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Homepage</title>
-    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="bloghomepage.css">
 </head>
 <body>
     <div class="grid__wrapper">
@@ -13,17 +13,18 @@
             <h1 class="blog__title">My Life. <span>My Blog.</span></h1>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="bloghomepage.html">Home</a></li>
                     <li><a href="#">My Blog</a></li>
                     <li><a href="#">Store</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a class="search-icon" href="#"><ion-icon name="search-outline"></ion-icon></a></li>
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Contact</button></a>
         </header>
         <div class="image"></div>
         <div class="main__ct">
-            <div class="card" id="card1">
+            <div class="card" id="card1" onclick="location.href='blogpost copy.html';">
                 <div class="card-image"></div>
                 <div class="card-text">
                     <span class="date">9 days ago</span>
@@ -44,6 +45,7 @@
                         <div class="type">comments</div>
                     </div>
                 </div>
+                <!-- </a> -->
             </div>
             <div class="card" id="card2">
                 <div class="card-image" id="card2-img"></div>

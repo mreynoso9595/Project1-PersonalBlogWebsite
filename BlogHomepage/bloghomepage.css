@@ -17,7 +17,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: #e1d7d1;
-    height: 15vh;
+    height: 20vh;
     padding: 30px 10%;
 }
 
@@ -73,7 +73,7 @@ button:hover {
 
 .image {
     height: 40vh;
-    background-image: url("main_image.jpg");
+    background-image: url("images/main_image.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -114,7 +114,7 @@ button:hover {
 
 .card-image {
     grid-area: image;
-    background-image: url("confetti.jpg");
+    background-image: url("images/confetti.jpg");
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background-size: cover;
@@ -192,42 +192,42 @@ button:hover {
 }
 
 #card2-img {
-    background-image: url("mindful.jpg");
+    background-image: url("images/mindful.jpg");
     background-position: center;
 }
 
 #card3-img {
-    background-image: url("maze.jpg");
+    background-image: url("images/maze.jpg");
     background-position: center;
 }
 
 #card4-img {
-    background-image: url("venice.jpg");
+    background-image: url("images/venice.jpg");
     background-position: top;
 }
 
 #card5-img {
-    background-image: url("stairs.jpg");
+    background-image: url("images/stairs.jpg");
     background-position: 60% 700%;
 }
 
 #card6-img {
-    background-image: url("hotairballon.jpg");
+    background-image: url("images/hotairballon.jpg");
     background-position: center;
 }
 
 #card7-img {
-    background-image: url("footwear.jpg");
+    background-image: url("images/footwear.jpg");
     background-position: 30% 70%;
 }
 
 #card8-img {
-    background-image: url("party.jpg");
+    background-image: url("images/party.jpg");
     background-position: center;
 }
 
 #card9-img {
-    background-image: url("funnydog.jpg");
+    background-image: url("images/funnydog.jpg");
     background-position: center;
 }
 
@@ -248,7 +248,7 @@ footer {
     padding: 0 10%;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 .social-icons-container {
@@ -264,6 +264,16 @@ footer {
 
 .social-icons:hover {
     color: #7b7f85;
+}
+
+.search-icon {
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #0088a9;
 }
 
 .nav__links2 li {
