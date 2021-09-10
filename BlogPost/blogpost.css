@@ -6,6 +6,10 @@
     padding: 0;    
 } 
 
+body {
+    background-color: #e1d7d1;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -13,6 +17,7 @@ header {
     background-color: #e1d7d1;
     height: 20vh;
     padding: 30px 10%;
+    box-shadow: 0 17px 15px -15px gray;
 }
 
 .blog__title {
@@ -70,16 +75,6 @@ button:hover {
     background-color: rgba(0,136,169,0.6);
 }
 
-.blogpost__title {
-    font-family: "Roboto", sans-serif;
-    text-decoration: underline;
-}
-
-.post__info {
-    font-family: "Roboto", sans-serif;
-    color: black;
-}
-
 .grid__container {
     display: grid;
     height: 100vh;
@@ -90,20 +85,36 @@ button:hover {
     gap: 10px;
 }
 
-.grid__container div {
-    background-color: grey;
-}
-
 .box-1 {
     grid-area: A;
+    display: flex;
+    /* background-color: #e1d7d1; */
+    background-image: url("/Users/niive/Desktop/My Bag/My Interests/Front End Web Developer Nanodegree/Project 1 - Personal Blog Website/BlogHomepage/images/confetti.jpg");
+    background-position: bottom center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogpost__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+}
+
+.post__info {
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.596);
+    text-align: center;
 }
 
 .box-2 {
     grid-area: B;
+    background-color: grey;
 }
 
 .box-3 {
     grid-area: C;
+    background-color: grey;
 }
 
 footer {
