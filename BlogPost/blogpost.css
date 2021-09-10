@@ -50,6 +50,11 @@ header {
     color: #0088a9;
 }
 
+.search-icon {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
 button {
     font-family: "Roboto", sans-serif;
     margin-left: 20px;
@@ -63,4 +68,90 @@ button {
 
 button:hover {
     background-color: rgba(0,136,169,0.6);
+}
+
+.blogpost__title {
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+}
+
+.post__info {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.grid__container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px auto;
+    grid-template-areas: "A A A A"
+    "B B B C";
+    gap: 10px;
+}
+
+.grid__container div {
+    background-color: grey;
+}
+
+.box-1 {
+    grid-area: A;
+}
+
+.box-2 {
+    grid-area: B;
+}
+
+.box-3 {
+    grid-area: C;
+}
+
+footer {
+    display: flex;
+    background: #000000;
+    border-top-color: white;
+    border-top-style:dotted;
+    border-top-width: 1px;
+    padding: 0 10%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vh;
+}
+
+.social-icons-container {
+    margin-right: auto;
+}
+
+.social-icons {
+    display: inline-block;
+    color: #e1d7d1;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons:hover {
+    color: #7b7f85;
+}
+
+.search-icon {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.nav__links2 li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav__links2 li a {
+    transition: all 0.3s ease 0s;
+    color: #e1d7d1;
+    text-decoration: none;
+}
+
+.nav__links2 li a:hover {
+    color: #7b7f85;
 }

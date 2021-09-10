@@ -267,13 +267,8 @@ footer {
 }
 
 .search-icon {
-    color: black;
     font-size: 1.1em;
     cursor: pointer;
-}
-
-.search-icon:hover {
-    color: #0088a9;
 }
 
 .nav__links2 li {
