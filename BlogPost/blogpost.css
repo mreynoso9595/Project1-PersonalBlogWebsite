@@ -94,6 +94,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid black 3px;
 }
 
 .blogpost__title {
@@ -109,12 +110,35 @@ button:hover {
 
 .box-2 {
     grid-area: B;
-    background-color: grey;
+    /* background-color: rgba(128, 128, 128, 0.50); */
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.content p {
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.content p span {
+    font-weight: bold;
+}
+
+.bordered_para {
+    border: solid grey 1px;
+    padding-bottom: 1.2em;
 }
 
 .box-3 {
     grid-area: C;
     background-color: grey;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgba(172, 165, 165, 0.555), transparent); 
 }
 
 footer {
