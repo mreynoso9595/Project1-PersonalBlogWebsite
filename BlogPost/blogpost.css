@@ -114,6 +114,7 @@ button:hover {
     padding-left: 10px;
     padding-bottom: 10px;
     line-height: 1.5;
+    overflow: auto;
 }
 
 .content p {
@@ -123,6 +124,16 @@ button:hover {
 
 .content p span {
     font-weight: bold;
+}
+
+.content ul li {
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 3em;
+}
+
+.content ol li {
+    margin-left: 3em;
 }
 
 .bordered_para {
