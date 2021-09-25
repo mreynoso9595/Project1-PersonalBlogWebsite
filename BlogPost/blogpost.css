@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "post_header.css";
+@import "post_footer.css";
 
 * {
     box-sizing: border-box;
@@ -8,71 +10,6 @@
 
 body {
     background-color: #e1d7d1;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #e1d7d1;
-    height: 20vh;
-    padding: 30px 10%;
-    box-shadow: 0 17px 15px -15px gray;
-}
-
-.blog__title {
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 27.7px;
-    text-transform: uppercase;
-    margin-right: auto;
-}
-
-.blog__title span {
-    color: rgb(255,7,110);
-}
-
-.nav__links .nav__links2 {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    color: black;
-    text-decoration: none;
-}
-
-.nav__links li a:hover {
-    color: #0088a9;
-}
-
-.search-icon {
-    font-size: 1.1em;
-    cursor: pointer;
-}
-
-button {
-    font-family: "Roboto", sans-serif;
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0,136,169,0.6);
 }
 
 .grid__container {
@@ -88,8 +25,7 @@ button:hover {
 .box-1 {
     grid-area: A;
     display: flex;
-    /* background-color: #e1d7d1; */
-    background-image: url("/Users/niive/Desktop/My Bag/My Interests/Front End Web Developer Nanodegree/Project 1 - Personal Blog Website/BlogHomepage/images/confetti.jpg");
+    background-image: url("../BlogHomepage/images/confetti.jpg");
     background-position: bottom center;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +46,6 @@ button:hover {
 
 .box-2 {
     grid-area: B;
-    /* background-color: rgba(128, 128, 128, 0.50); */
     padding-left: 10px;
     padding-bottom: 10px;
     line-height: 1.5;
@@ -122,19 +57,19 @@ button:hover {
     font-weight: 300;
 }
 
-.content p span {
-    font-weight: bold;
-}
+    .content p span {
+        font-weight: bold;
+    }
 
-.content ul li {
-    display: list-item;
-    list-style-type: disc;
-    margin-left: 3em;
-}
+    .content ul li {
+        display: list-item;
+        list-style-type: disc;
+        margin-left: 3em;
+    }
 
-.content ol li {
-    margin-left: 3em;
-}
+    .content ol li {
+        margin-left: 3em;
+    }
 
 .bordered_para {
     border: solid grey 1px;
@@ -147,81 +82,52 @@ button:hover {
     padding-bottom: 10px;
 }
 
-.box-3 h2{
-    font-style: italic;
-}
+    .box-3 h2{
+        font-style: italic;
+    }
 
-.box-3 .about {
+    .box-3 a {
+        padding: 15px;
+    }
+
+.about {
     display: flex;
     background-color: rgba(128, 128, 128, 0.185);
     flex-direction: column;
-    /* border: solid black 1px; */
     padding: 15px;
     font-style: italic;
     line-height: 1.5;
+    align-items: center;
 }
 
-.box-3 .archive {
+    .about p:first-of-type {
+        padding-top: 10px;
+    }
+
+.linkedin {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+    .linkedin:hover {
+        color: #7b7f85;
+    }
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.archive {
     padding: 15px;
 }
-
-.box-3 a {
-    padding: 15px;
-}
-
 
 .divider {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, rgba(172, 165, 165, 0.555), transparent); 
-}
-
-footer {
-    display: flex;
-    background: #000000;
-    border-top-color: white;
-    border-top-style:dotted;
-    border-top-width: 1px;
-    padding: 0 10%;
-    justify-content: flex-end;
-    align-items: center;
-    height: 15vh;
-}
-
-.social-icons-container {
-    margin-right: auto;
-}
-
-.social-icons {
-    display: inline-block;
-    color: #e1d7d1;
-    margin: 0 10px;
-    font-size: 1.5em;
-}
-
-.social-icons:hover {
-    color: #7b7f85;
-}
-
-.search-icon {
-    font-size: 1.1em;
-    cursor: pointer;
-}
-
-.nav__links2 li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.nav__links2 li a {
-    transition: all 0.3s ease 0s;
-    color: #e1d7d1;
-    text-decoration: none;
-}
-
-.nav__links2 li a:hover {
-    color: #7b7f85;
 }

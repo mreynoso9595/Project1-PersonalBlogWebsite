@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "homepage_header.css";
+@import "homepage_footer.css";
 
 * {
     box-sizing: border-box;
@@ -10,65 +12,6 @@
     display: grid;
     grid-template-columns: 1fr;
     background: #e1d7d1;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #e1d7d1;
-    height: 20vh;
-    padding: 30px 10%;
-}
-
-.blog__title {
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 27.7px;
-    text-transform: uppercase;
-    margin-right: auto;
-}
-
-.blog__title span {
-    color: rgb(255,7,110);
-}
-
-.nav__links .nav__links2 {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    color: black;
-    text-decoration: none;
-}
-
-.nav__links li a:hover {
-    color: #0088a9;
-}
-
-button {
-    font-family: "Roboto", sans-serif;
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0,136,169,0.6);
 }
 
 .image {
@@ -88,9 +31,9 @@ button:hover {
     margin-bottom: 2.5em;
 } 
 
-.main__ct div div {
-    border: none;
-} 
+    .main__ct div div {
+        border: none;
+    } 
 
 .card {
     display: grid;  
@@ -107,10 +50,10 @@ button:hover {
     overflow: hidden;
 }
 
-.card:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
+    .card:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
 
 .card-image {
     grid-area: image;
@@ -125,31 +68,31 @@ button:hover {
     margin: 15px;
 }
 
-.card-text .date, .date7 {
-    color: rgb(255,7,110);
-    font-size: 13px;
-}
+    .card-text .date, .date7 {
+        color: rgb(255,7,110);
+        font-size: 13px;
+    }
 
-.card-text .date2, .date6, .date8 {
-    color: rgb(255,146,123);
-    font-size: 13px;
-}
+    .card-text .date2, .date6, .date8 {
+        color: rgb(255,146,123);
+        font-size: 13px;
+    }
 
-.card-text .date3, .date4, .date9 {
-    color: rgba(158,196,232,0.91);
-    font-size: 13px;
-}
+    .card-text .date3, .date4, .date9 {
+        color: rgba(158,196,232,0.91);
+        font-size: 13px;
+    }
 
-.card-text p {
-    color: grey;
-    font-size: 15px;
-    font-weight: 300;
-}
+    .card-text p {
+        color: grey;
+        font-size: 15px;
+        font-weight: 300;
+    }
 
-.card-text h2 {
-    margin-top: 0px;
-    font-size: 28px;
-}
+    .card-text h2 {
+        margin-top: 0px;
+        font-size: 28px;
+    }   
 
 .card-stats {
     grid-area: stats;
@@ -161,35 +104,43 @@ button:hover {
     background: rgb(255,7,110,0.5);
 }
 
-.card-stats .stat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-    color: white;
-    font-size: 12.5px;
-}
+    .card-stats .stat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+        color: white;
+        font-size: 12.5px;
+    }
 
-.card-stats .type {
-    font-size: 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
+    .card-stats .type {
+        font-size: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
 
-.card-stats .value {
-    font-size: 17px;
-    font-weight: 500;
-}
+    .card-stats .value {
+        font-size: 17px;
+        font-weight: 500;
+    }
 
-.card-stats .border {
-    border-left: 1px solid rgb(172,26,87);
-    border-right: 1px solid rgb(172,26,87);
-}
+    .card-stats .border {
+        border-left: 1px solid rgb(172,26,87);
+        border-right: 1px solid rgb(172,26,87);
+    }
 
-.card-stats .value sup {
-    font-size: 12px;
-}
+    .card-stats .value sup {
+        font-size: 12px;
+    }
+
+    #card2-stats, #card6-stats, #card8-stats {
+        background: rgb(255,146,123);
+    }
+
+    #card3-stats, #card4-stats, #card9-stats {
+        background: rgba(158,196,232,0.91);
+    }
 
 #card2-img {
     background-image: url("images/mindful.jpg");
@@ -229,62 +180,4 @@ button:hover {
 #card9-img {
     background-image: url("images/funnydog.jpg");
     background-position: center;
-}
-
-#card2-stats, #card6-stats, #card8-stats {
-    background: rgb(255,146,123);
-}
-
-#card3-stats, #card4-stats, #card9-stats {
-    background: rgba(158,196,232,0.91);
-}
-
-footer {
-    display: flex;
-    background: #000000;
-    border-top-color: white;
-    border-top-style:dotted;
-    border-top-width: 1px;
-    padding: 0 10%;
-    justify-content: flex-end;
-    align-items: center;
-    height: 15vh;
-}
-
-.social-icons-container {
-    margin-right: auto;
-}
-
-.social-icons {
-    display: inline-block;
-    color: #e1d7d1;
-    margin: 0 10px;
-    font-size: 1.5em;
-}
-
-.social-icons:hover {
-    color: #7b7f85;
-}
-
-.search-icon {
-    font-size: 1.1em;
-    cursor: pointer;
-}
-
-.nav__links2 li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.nav__links2 li a {
-    transition: all 0.3s ease 0s;
-    color: #e1d7d1;
-    text-decoration: none;
-}
-
-.nav__links2 li a:hover {
-    color: #7b7f85;
 }
