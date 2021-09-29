@@ -80,6 +80,7 @@ body {
     grid-area: C;
     padding-right: 10px;
     padding-bottom: 10px;
+    overflow: auto;
 }
 
     .box-3 h2{
@@ -122,9 +123,14 @@ body {
   border-radius: 50%;
 }
 
-.archive {
-    padding: 15px;
+.archive__container {
+    display: flex;
+    flex-direction: column;
 }
+
+    .archive {
+        padding: 15px;
+    }
 
 .divider {
     border: 0;

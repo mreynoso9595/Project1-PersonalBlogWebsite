@@ -62,3 +62,27 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.6);
 }
+
+/* mobile design */
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+    }
+
+    .blog__title {
+        margin-right: initial;
+        font-size: 24px;
+    }
+
+    .nav__links li {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    button {
+        margin-top: 5px;
+        margin-left: initial;
+        font-size: 10px;
+        padding: 9px 15px;
+    }
+}
