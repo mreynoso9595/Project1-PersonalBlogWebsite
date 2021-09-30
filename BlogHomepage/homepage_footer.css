@@ -43,3 +43,26 @@ footer {
 .nav__links2 li a:hover {
     color: #7b7f85;
 }
+
+/* mobile design */
+@media screen and (max-width: 1200px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-icons-container {
+        margin-right: initial;
+    }
+
+    .social-icons {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.2em;
+    }
+
+    .nav__links2 li {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+}

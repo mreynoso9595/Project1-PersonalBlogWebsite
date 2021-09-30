@@ -27,8 +27,7 @@
     grid-auto-rows: 300px;
     grid-gap: 2.5em;
     justify-content: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin: 2.5em 0em;
 } 
 
     .main__ct div div {
@@ -180,4 +179,45 @@
 #card9-img {
     background-image: url("images/funnydog.jpg");
     background-position: center;
+}
+
+/* mobile design */
+@media screen and (max-width: 1200px) {
+    .main__ct {
+        grid-template-columns: 1fr 1fr;
+        margin: 2.5em 2.5em;
+    } 
+
+    .card-text p {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .card-text h2 {
+        font-size: 18px;
+    }   
+
+    .card-text .date, .date7 {
+        font-size: 10px;
+    }
+
+    .card-text .date2, .date6, .date8 {
+        font-size: 10px;
+    }
+
+    .card-text .date3, .date4, .date9 {
+        font-size: 10px;
+    }
+
+    .card-stats .type {
+        font-size: 8px;
+    }
+
+    .card-stats .value {
+        font-size: 12px;
+    }
+
+    .card-stats .value sup {
+        font-size: 8px;
+    }
 }
