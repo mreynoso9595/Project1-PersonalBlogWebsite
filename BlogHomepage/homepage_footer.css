@@ -45,7 +45,7 @@ footer {
 }
 
 /* mobile design */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
         justify-content: center;

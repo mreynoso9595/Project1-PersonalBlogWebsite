@@ -182,7 +182,7 @@
 }
 
 /* mobile design */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .main__ct {
         grid-template-columns: 1fr 1fr;
         margin: 2.5em 2.5em;

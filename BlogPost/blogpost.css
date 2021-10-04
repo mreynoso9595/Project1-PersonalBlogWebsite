@@ -137,3 +137,46 @@ body {
     height: 2px;
     background-image: linear-gradient(to right, transparent, rgba(172, 165, 165, 0.555), transparent); 
 }
+
+/* mobile design */
+@media screen and (max-width: 768px) {
+    .grid__container {
+        grid-template-areas: "A A A A"
+        "B B B B"
+        "C C C C";
+    }
+
+    .blogpost__title {
+        font-size: 25px;
+    }
+
+    .content p {
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .content ul li {
+        font-size: 12px;
+    }
+
+    .content ol li {
+        font-size: 12px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .linkedin {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .archive__container p {
+        font-size: 12px;
+    }
+}
