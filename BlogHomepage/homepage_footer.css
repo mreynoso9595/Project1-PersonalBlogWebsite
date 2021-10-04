@@ -44,6 +44,31 @@ footer {
     color: #7b7f85;
 }
 
+
+
+/* tablet design */
+@media screen and (max-width: 1124px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-icons-container {
+        margin-right: initial;
+    }
+
+    .social-icons {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.35em;
+    }
+
+    .nav__links2 li {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
 /* mobile design */
 @media screen and (max-width: 768px) {
     footer {
