@@ -13,7 +13,7 @@ header {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 27.7px;
+    font-size: 37.7px;
     text-transform: uppercase;
     margin-right: auto;
 }
@@ -71,6 +71,31 @@ button {
 
 button:hover {
     background-color: rgba(0,136,169,0.6);
+}
+
+
+
+/* tablet design */
+@media screen and (max-width: 1124px) {
+    header {
+        flex-direction: column;
+    }
+
+    .blog__title {
+        margin-right: initial;
+        font-size: 32.7px;
+    }
+
+    .nav__links li {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 9px 15px;
+    }
+
 }
 
 /* mobile design */

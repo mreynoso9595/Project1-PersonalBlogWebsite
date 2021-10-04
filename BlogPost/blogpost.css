@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import "post_header.css";
 @import "post_footer.css";
@@ -136,6 +137,45 @@ body {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, rgba(172, 165, 165, 0.555), transparent); 
+}
+
+/* tablet design */
+@media screen and (max-width: 1124px) {
+    .blogpost__title {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .content ul li {
+        font-size: 15px;
+    }
+
+    .content ol li {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .linkedin {
+        font-size: 1.35em;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .archive__container p {
+        font-size: 15px;
+    }
+
 }
 
 /* mobile design */
